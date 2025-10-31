@@ -4,43 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To portofolio μου</title>
-
+  <title>Το portfolio μου — Σχετικά</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Αρχική</a></li>
-      <li><a href="about.html">Σχετικά με εμένα</a></li>
-      <li><a href="projects.html">Έργα</a></li>
-      <li><a href="skills.html">Δεξιότητες</a></li>
-      <li><a href="contact.html">Επικοινωνία</a></li>
-    </ul>
-  </nav>
-  <img src="images/Giannis_Photo.jpg" alt "Η φωτογραφία μου" width="300">
-  <h1>Γειά σου ! Ειμαι ο Γιάννης Αποστολάκης</h1>
-  <p>Καλώς ήρθες στο προσωπικό μου portofolio</p>
+  <a class="skip-link" href="#main">Παπήδα στο περιεχόμενο</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-brand">
+        <div>
+          <h1 class="site-title">Γιάννης Αποστολάκης</h1>
+          <div class="site-sub">Σχετικά</div>
+        </div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰ <span
+            class="sr-only">Μενού</span></button>
+      </div>
+      <nav class="primary container" aria-label="Πρωτεύουσα πλοήγηση">
+        <ul id="primary-navigation" class="nav-list">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="about.html">Σχετικά</a></li>
+          <li><a href="projects.html">Έργα</a></li>
+          <li><a href="skills.html">Δεξιότητες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h2> Σχετικά με εμένα</h2>
-  <p> Είμαι αρχάριος Web developer και μαθαίνω html, css και javascript. </p>
+  <main id="main" class="container">
+    <section class="hero">
+      <img src="images/Giannis_Photo.jpg" alt="Φωτογραφία Γιάννη Αποστολάκη">
+      <div>
+        <h1>Σχετικά με εμένα</h1>
+        <p class="lead">Είμαι αρχάριος Web developer και μαθαίνω HTML, CSS και JavaScript. Εργάζομαι σε έργα που
+          βελτιώνουν
+          τις δεξιότητές μου και μου αρέσει να μαθαίνω σύγχρονες τεχνολογίες.</p>
+        <p><button class="btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Πήγαινε στην κορυφή ↑</button>
+        </p>
+      </div>
+    </section>
+  </main>
 
+  <script src="./app.js"></script>
 
-
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="top-button">
-    Πήγαινε στην κορυφή ↑
-
-  </button>
-  <p></p>
-
-  <div id="root"></div>
+  <footer class="site-footer container">
+    <p>© 2025 Γιάννης Αποστολάκης. Όλα τα δικαιώματα διατηρούνται.</p>
+  </footer>
 
 </body>
-
-<footer>
-  <p>© 2025 Γιάννης Αποστολάκης. Όλα τα δικαιώματα διατηρούνται.</p>
-</footer>
-
 
 </html>

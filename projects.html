@@ -4,39 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Το portfolio μου | Projects</title>
+  <title>Το portfolio μου — Έργα</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Αρχική</a></li>
-        <li><a href="about.html">Σχετικά με εμένα</a></li>
-        <li><a href="projects.html">Έργα</a></li>
-        <li><a href="skills.html">Δεξιότητες</a></li>
-        <li><a href="contact.html">Επικοινωνία</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main">Παπήδα στο περιεχόμενο</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-brand">
+        <div>
+          <h1 class="site-title">Γιάννης Αποστολάκης</h1>
+          <div class="site-sub">Έργα</div>
+        </div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰ <span
+            class="sr-only">Μενού</span></button>
+      </div>
+      <nav class="primary container" aria-label="Πρωτεύουσα πλοήγηση">
+        <ul id="primary-navigation" class="nav-list">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="about.html">Σχετικά</a></li>
+          <li><a href="projects.html">Έργα</a></li>
+          <li><a href="skills.html">Δεξιότητες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about" class="about">
+  <main id="main" class="container">
+    <section class="about">
       <h1>Γεια, είμαι ο Γιάννης</h1>
       <div class="about-row">
-        <img src="images/Giannis_Photo.jpg" alt="Φωτογραφία Γιάννη Αποστολάκη" width="300" />
-
+        <img src="images/Giannis_Photo.jpg" alt="Φωτογραφία Γιάννη Αποστολάκη">
       </div>
     </section>
 
     <section id="projects" class="projects">
       <h2>Έργα</h2>
-      <p>Παρακάτω υπάρχουν μερικά επιλεγμένα έργα με σύντομη περιγραφή, τεχνολογίες και συνδέσμους.</p>
+      <p class="lead">Παρακάτω υπάρχουν μερικά επιλεγμένα έργα με σύντομη περιγραφή, τεχνολογίες και συνδέσμους.</p>
 
       <div class="project-list">
         <article class="project-card">
-          <img src="project1.png" alt="Screenshot Project One" class="project-image" />
+          <img src="images/project1.png" alt="Screenshot Project One" class="project-image" />
           <div class="project-content">
             <h3>Project One — Προσωπική Ιστόσελίδα</h3>
             <p>Μια responsive προσωπική ιστοσελίδα με προφίλ, portfolio και blog. Σχεδιάστηκε για να δείχνει έργα και
@@ -47,7 +57,7 @@
         </article>
 
         <article class="project-card">
-          <img src="project2.png" alt="Screenshot Project Two" class="project-image" />
+          <img src="images/project2.png" alt="Screenshot Project Two" class="project-image" />
           <div class="project-content">
             <h3>Project Two — To-do App</h3>
             <p>Μια μικρή εφαρμογή διαχείρισης εργασιών με τοπική αποθήκευση και φιλική διεπαφή.</p>
@@ -57,7 +67,7 @@
         </article>
 
         <article class="project-card">
-          <img src="project3.png" alt="Screenshot Project Three" class="project-image" />
+          <img src="images/project3.png" alt="Screenshot Project Three" class="project-image" />
           <div class="project-content">
             <h3>Project Three — Αναλύσεις Δεδομένων</h3>
             <p>Μικρό project για συλλογή και οπτικοποίηση δεδομένων, παρέχει γραφήματα και εξαγωγή CSV.</p>
@@ -68,10 +78,11 @@
       </div>
     </section>
 
-
   </main>
 
-  <footer>
+  <script src="./app.js"></script>
+
+  <footer class="site-footer container">
     <p>© 2025 Γιάννης Αποστολάκης. Όλα τα δικαιώματα διατηρούνται.</p>
   </footer>
 

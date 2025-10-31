@@ -4,34 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To portofolio μου</title>
-
+  <title>Το portfolio μου — Επικοινωνία</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Αρχική</a></li>
-        <li><a href="about.html">Σχετικά με εμένα</a></li>
-        <li><a href="projects.html">Έργα</a></li>
-        <li><a href="skills.html">Δεξιότητες</a></li>
-        <li><a href="contact.html">Επικοινωνία</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main">Παπήδα στο περιεχόμενο</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-brand">
+        <div>
+          <h1 class="site-title">Γιάννης Αποστολάκης</h1>
+          <div class="site-sub">Επικοινωνία</div>
+        </div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰ <span
+            class="sr-only">Μενού</span></button>
+      </div>
+      <nav class="primary container" aria-label="Πρωτεύουσα πλοήγηση">
+        <ul id="primary-navigation" class="nav-list">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="about.html">Σχετικά</a></li>
+          <li><a href="projects.html">Έργα</a></li>
+          <li><a href="skills.html">Δεξιότητες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <img src="images/Giannis_Photo.jpg" alt "Η φωτογραφία μου" width="300">
-  <h1>Γειά σου ! Ειμαι ο Γιάννης Αποστολάκης</h1>
-  <p>Καλώς ήρθες στο προσωπικό μου portofolio</p>
 
-  <h2>Επικοινωνία</h2>
-  <p>Μπορείς να με βρείς στη διεύθυνση <a href="mailto:gapost64@gmail.com">gapost64@gmail.com</a></p>
+  <main id="main" class="container">
+    <section>
+      <h1>Επικοινωνία</h1>
+      <p class="lead">Μπορείς να με βρεις στο:</p>
+      <p><a href="mailto:gapost64@gmail.com">gapost64@gmail.com</a></p>
+
+      <h2>Μικρή φόρμα (mailto)</h2>
+      <form action="mailto:gapost64@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Όνομα</label><br>
+        <input id="name" name="name" type="text" required
+          style="width:100%;padding:8px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)"><br>
+        <label for="message">Μήνυμα</label><br>
+        <textarea id="message" name="message" rows="6" required
+          style="width:100%;padding:8px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)"></textarea>
+        <p><button class="btn" type="submit">Αποστολή</button></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+
+  <footer class="site-footer container">
+    <p>© 2025 Γιάννης Αποστολάκης. Όλα τα δικαιώματα διατηρούνται.</p>
+  </footer>
+
 </body>
-
-<footer>
-  <p>© 2025 Γιάννης Αποστολάκης. Όλα τα δικαιώματα διατηρούνται.</p>
-</footer>
-
 
 </html>
